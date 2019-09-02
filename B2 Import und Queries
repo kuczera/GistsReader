@@ -4,9 +4,13 @@
 Im GraphGist B1 haben Sie gelernt, Knoten und Kanten manuell anzulegen. Bei größeren Datenmengen - besonders, wenn die Daten schon in tabellarischer Form vorliegen - kann man sich viel Arbeit sparen, indem man Daten mit dem Befehl "LOAD CSV" importiert.
 CSV steht für "comma-seperated value". Die Datei enthält also Werte, die durch Kommata (oder ggf. ein anderes, definiertes Trennzeichen wie z.B. Tabstopp oder Semikolon) getrennt sind. Das Prinzip einer CSV-Datei entspricht einer Tabellenstruktur mit Zeilen und Spalten. 
 
+.So sehen die selben Daten in Tabellen- bzw. CSV-Format aus:
+[options="header"]
+|=======================
+|CSV|Tabelle
+|image::https://kuczera.github.io/GistsReader/Bilder/IdsUndEhepartnerCSVScreenshot.jpg[]|image::https://kuczera.github.io/GistsReader/Bilder/IdsUndEhepartnerTabelleScreenshot.jpg[]
+|=======================
 
-image::https://     .jpg[]
-(hier Beispielbild TABELLE vs. CSV)
 
 === Struktur des LOAD CSV - Befehls 
 Der LOAD CSV-Befehl allein stellt nur die Daten in Cypher zur Verfügung, ohne dass daraus schon Knoten und Kanten erstellt würden. Mit den bereits bekannten Befehlen CREATE, MERGE oder MATCH spezifizieren wir, wie die Inhalte in Form von Knoten und Kanten miteinander in Beziehung gesetzt werden sollen. 
