@@ -109,7 +109,7 @@ Genauso würde es auch mit dem Geburtsdatum funktionieren.
 * Einen Knoten vom Typ Person mit der Eigenschaft Name "Cimburgis" 
 * Lassen Sie sich das Ergebnis anzeigen.
 
-=== 3. Fügen sie die folgenden Geburtsdaten hinzu: 
+=== 3. Fügen Sie die folgenden Geburtsdaten hinzu: 
 * Friedrich: 1415-09-21 
 * Ernst: 1377
 * Cimburgis: 1394 oder 1397
@@ -132,7 +132,7 @@ CREATE (c:Person {name:'Cymburgis'})
 RETURN *;
 ----
 
-=== Zu 3. Fügen sie die folgenden Geburtsdaten hinzu: 
+=== Zu 3. Fügen Sie die folgenden Geburtsdaten hinzu: 
 
 [source,cypher]
 ----
