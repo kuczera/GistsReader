@@ -1,6 +1,6 @@
 ### 02.09.2019 | Digitale Akademie, Mainz
 
-# GraphGists zum Reader <a href="https://kuczera.github.io/GraphReader/">Graphen in den Digitalen Geisteswissenschaften</a>
+# GraphGists zum Reader [Graphen in den Digitalen Geisteswissenschaften](https://kuczera.github.io/GraphReader/)
 
 ### Andreas Kuczera
 
