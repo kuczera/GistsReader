@@ -18,11 +18,13 @@ Der LOAD CSV-Befehl allein stellt nur die Daten in Cypher zur Verfügung, ohne d
 [source,cypher]
 ----
 MATCH (n) DETACH DELETE n
+LOAD CSV WITH HEADERS FROM          AS line 
+CREATE (p:Person {name:line.name
 
-(hier ein Cypher Query) 
 ----
 *bedeutet*: Leere die aktuelle Datenbank.
-Lade die Datei XYZ. Erstelle für jede Zeile diese und jene Knoten und diese und jene Kanten 
+Lade die Datei XYZ, zeilenweise. 
+Erstelle für jede Zeile einen Personenknoten, hier p genannt, mit den Properties "Name" gleich Inhalt der Spalte "name", 
 
 === Knoten und Kanten separat laden
 Wenn Knoten, die aus verschiedenen Zeilen erstellt wurden, über ihre ID in Beziehung zueinander gesetzt werden, sollte man mindestens zwei separate "LOAD CSV" - Befehle ausführen: Im ersten Durchlauf werden nur die Knoten erstellt, erst wenn alle Knoten in der Datenbank bestehen generieren wir über den zweiten Befehl erste Kanten. So wird vermieden, dass Kanten zu einem Knoten erstellt werden sollen, der noch gar nicht vorhanden ist. 
