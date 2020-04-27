@@ -137,13 +137,13 @@ RETURN *;
 [source,cypher]
 ----
 MATCH (f:Person {name:'Friedrich'}) 
-SET f.Geburtsdatum = '1377'
+SET f.Geburtsdatum = '1377-00-00'
 
 MATCH (e:Person {name:'Ernst'}) 
 SET e.Geburtsdatum = '1415-09-21'
 
 MATCH (c:Person {name:'Cymburgis'}) 
-SET f.Geburtsdatum = '1394'
+SET c.Geburtsdatum = '1394-00-00'
 RETURN *;
 ----
 
